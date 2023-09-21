@@ -5,7 +5,7 @@ f = expand(input("Insira f(x): "))
 g = expand(input("Insira g(x): "))
 quest = input("Deseja substituir o x por um número? ")
 
-if (quest.lower == "sim"):
+if (quest.lower() == "sim"):
     num = input("Insira um número: ")
 
     fog = f.subs(x, g.subs(x, num))
