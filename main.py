@@ -13,10 +13,10 @@ if (quest.lower() == "sim"):
     gog = g.subs(x, g.subs(x, num))
     fof = f.subs(x, f.subs(x, num))
 else:
-    fog = f.subs(x, g)
-    gof = g.subs(x, f)
-    gog = g.subs(x, g)
-    fof = f.subs(x, f)
+    fog = str(f.subs(x, g)).replace("**", "^")
+    gof = str(g.subs(x, f)).replace("**", "^")
+    gog = str(g.subs(x, g)).replace("**", "^")
+    fof = str(f.subs(x, f)).replace("**", "^")
 
 print(f"f o g  = ", fog)
 print(f"g o f = ", gof)
